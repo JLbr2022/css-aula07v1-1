@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e9e5e4;
+  font-family: "Manjari", sans-serif;
+}
+
+/* HEADER  */
+.header {
+  max-width: 104.2em; /* 1726px*/
+  margin: 0em auto;
+  margin-bottom: 0%;
+  margin-top: 0%;
+  background-color: #180e0c;
+  padding: 1em 1.9em;
+
+  position: fixed;
+  right: 0;
+  left: 0;
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.logo-nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation ul,
+li,
+a {
+  color: antiquewhite;
+  list-style: none;
+  font-size: 1.1em;
+  text-decoration: none;
+  padding: 0.5em 0.5em;
+  display: inline-block;
+}
+
+.navigation a:hover {
+  background-color: rgb(152, 152, 152);
+  color: #180e0c;
+  transition: all 0.4s linear;
+  border-radius: 10%;
+}
+
+/* FOTO PRINCIPAL */
+.fotoppal {
+  width: 100%;
+  padding-top: 7.2em;
+  /* max-width: 107.8em; */
+  /* margin: 0em; */
+  /* right: 0;
+  left: 0; */
+  margin-top: 0%;
+  margin-bottom: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  /* border: 0.1875rem; */
+  /* border-style: solid;
+  border-color: red; */
+}
+
+.fotoppal img {
+  max-width: 108em;
+  /* height: auto; */
+  margin: 0em auto;
+  margin-top: 0%;
+  /* right: 0;
+  left: 0; */
+}
+
+/* CONTENIDO MAIN */
+.content {
+  display: grid;
+  padding-left: 2.5em;
+  max-width: 105em;
+  margin: 0em auto;
+  margin-top: 3.75em;
+  gap: 8em;
+  grid-template-columns: repeat(4, 19.375em);
+  /* border-style: solid;
+  border-color: red; */
+}
+
+.container .articles img {
+  max-width: 18.75em;
+  height: 18.75em;
+  margin: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border-style: solid;
+  border-color: red; */
+}
+
+.content .articles h2 {
+  margin-top: 0.625em;
+  width: 18.75rem;
+  margin-left: 0.7em;
+  font-size: 1.5rem;
+  /* border-style: solid;
+  border-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.content .articles p {
+  width: 18.75em;
+  margin-left: 1em;
+  margin-top: 1.25em;
+  padding-bottom: 2.5em;
+  font-family: "Times New Roman", Times, serif;
+  /* border-style: solid;
+  border-color: red; */
+}
+
+/* 2nd SECTION START */
+.container2 {
+  /* width: 100%; */
+  /* max-width: 1100em; */
+  margin: 0em auto;
+  margin-top: 0%;
+  /* margin-bottom: 0%; */
+  max-width: 108rem;
+  padding-bottom: 2.5em;
+  /* margin: 20px auto; */
+  display: grid;
+  grid-gap: 1.25em;
+  /* padding: 3.125em; */
+  background-color: #412720;
+  grid-template-columns: repeat(3, 33.125em);
+  grid-template-rows: repeat(4, 1fr);
+  /* border-style: solid;
+  border-color: red; */
+  grid-template-areas:
+    "ecaja1 ecaja2 ecaja3"
+    "ecaja4 ecaja5 ecaja6"
+    "ecaja7 ecaja8 ecaja6"
+    "ecaja10 ecaja11 ecaja12";
+}
+
+.container2 .ecaja6 {
+  grid-area: ecaja6;
+}
+
+/* CAJAS DE ARTICULOS MAS TEXTO */
+.container2 > div,
+.container2 .ecaja42-nested,
+.container2 .ecaja52-nested,
+.container2 .ecaja72-nested,
+.container2 .ecaja82-nested,
+.container2 .ecaja92-nested,
+.container2 .ecaja102-nested,
+.container2 .ecaja112-nested {
+  color: #724941;
+  text-align: left;
+  padding-left: 3em;
+  font-family: "Times New Roman", Times, serif;
+  font-size: large;
+  /* border-style: solid;
+  border-color: red; */
+  display: flex;
+  justify-content: left;
+}
+
+/* CAJAS DE TITULOS */
+.container2 > .ecaja1,
+.container2 .ecaja2,
+.container2 .ecaja3 {
+  color: #856159;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+/* STARTING 3th PART */
+
+.container3 {
+  width: 100%;
+  height: 24.375em;
+  max-width: 108em;
+  margin: 0em auto;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
+  font-family: "Times New Roman", Times, serif;
+  border: 3px;
+  /* border-style: solid;
+  border-color: red; */
+  background-color: #281713;
+  color: #856159;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* TITLE: A CERCA DE MERIDA */
+
+.container3 h2 {
+  width: fit-content;
+  margin-left: 2em;
+  /* padding-left: 0em; */
+  /* border-style: solid;
+  border-color: red; */
+}
+.about p {
+  padding-top: 2%;
+  width: 67em;
+  margin-left: 3em;
+  /* border-style: solid;
+  border-color: red; */
+}
+
+/* TITLE: ENLACES DE INTERES */
+
+.links h2 {
+  margin-left: 5em;
+  padding-bottom: 0.6em;
+}
+
+/* IMPORTANT LINKS */
+.container3 > .links div,
+.container3 > .links .alink1,
+.container3 > .links .alink2,
+.container3 > .links .alink3,
+.container3 > .links .alink4,
+.container3 > .links .alink5,
+.container3 > .links .alink6,
+.container3 > .links .alink7,
+.container3 > .links .alink8,
+.container3 > .links .alink9 {
+  /* padding-top: 10%; */
+  /* padding-left: 3.125rem; */
+  color: #856159;
+  margin-left: 5em;
+  width: 20em;
+  /* padding: 1%; */
+  /* padding-top: 2em; */
+  padding-left: 2em;
+  line-height: 1em;
+  /* border-style: solid;
+  border-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.links a:hover {
+  outline-color: black;
+  background-color: rgb(164, 147, 135);
+  font-size: 115%;
+  font-weight: 500;
+  transition: all 0.2s linear;
+  border-radius: 10%;
+  text-decoration-line: underline;
+}
+
+/* FOOTER ZONE */
+
+.footer {
+  max-width: 108em;
+  height: 6.25rem;
+  margin: 1em auto;
+  margin-bottom: 0%;
+  margin-top: 0%;
+  background-color: #180e0c;
+  color: #412720;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* RESPONSIVITY */
+/* @media screen and (max-width: 768px) {
+  .container3 {
+    grid-column: 1/-1;
+  }
+} */
